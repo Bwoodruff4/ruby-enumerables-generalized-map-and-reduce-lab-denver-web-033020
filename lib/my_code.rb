@@ -20,10 +20,9 @@ def reduce(source_array,starting_value=nil)
     i=1
   end
     
-    while i < source_array.length do
-      yield(v)
-    end
-    
+  while i < source_array.length do
+    value = yield(value,array[i])
+    i+=1
   end
-  
+  value
 end

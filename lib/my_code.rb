@@ -16,9 +16,17 @@ def reduce(source_array,starting_value=nil)
     i=0
     value=starting_value
     
-    while i < source_array.length
+    while i < source_array.length do
       
-  
-  
+    end
+  else
+    value=source_array[0]
+    i=1
+    
+    while i < source_array.length do
+      value = yield(v)
+    end
+    
+  end
   
 end

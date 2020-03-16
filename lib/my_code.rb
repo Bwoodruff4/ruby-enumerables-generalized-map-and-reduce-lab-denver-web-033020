@@ -8,6 +8,6 @@ def map(source_array)
     new_array << yield(array[i])
     i+=1
   end
-  
+  new_array
   
 end
